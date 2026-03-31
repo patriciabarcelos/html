@@ -1,0 +1,45 @@
+<!--Página de Contato-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Entre em Contato</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="roupas.html">Roupas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+        <h2>Fale Conosco</h2>
+        <form>
+        <fieldset>
+        <legend>Informações de contato aqui.</legend>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="name"placeholder="Digite seu nome" required><br><br>
+        <label for="telefone">Telefone:</label><br>
+        <input type="telefone" id="telefone" name="telefone"placeholder="(11) 99999-9999"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"placeholder="exemplo@dominio.com" required><br><br>
+        <label for="Comentários">Como podemos ajudar:</label><br>
+        <textarea name="comentários" id="comentários" rows="4" cols="50" placeholder="Digite aqui sua mensagem"></textarea><br><br>
+        <button onclick="alert ('Mensagem enviado')">Envie sua mensagem</button>
+        </fieldset>
+        </form>
+        </section>
+    </main>
+    <footer>
+        <p class="paragrafo-footer">&copyTodos direitos reservados.</p>
+    </footer>
+</body>
+</html>
