@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+body {
+        background-color: white;
+        color: black;
+        font-family:"Cabin", sans-serif;
+        font-weight: 400;
+        margin: 0px;
+        padding: 0;
+        scroll-behavior: smooth; /* rolagem suave */
+         line-height: 1.6;
+        
+    }
+
+    header{
+        padding:2rem;
+        background-color:rgb(40, 19, 233);
+        text-align: center;
+    }
+
+    header h1{
+        color:#fff;
+    }
+    main{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    h1{
+        color:#F4F0EA;
+    }
+     h2, h3,h4 {
+        color:#0e0d0d ;
+    }
+    input::placeholder{
+        color:rgb(180, 176, 176) ;
+        width:100%;
+        padding: 0.6rem;
+        border: 2px solid rgb(180, 176, 176);
+        outline: none;
+        border-radius: 5px;
+        background-color: transparent;
+        ;
+        
+    }    
+    textarea::placeholder{
+     color:  rgb(180, 176, 176)
+    }
+
+    img{
+        width: 15rem;
+        border-radius: 5px;
+    }
+    nav a {
+        text-decoration: none;
+        color:#283593;
+        font-weight: bold;
+        transition: color 0.3s;
+     }
+
+     nav a:hover{
+        color:#1c77d8;
+     }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+        background-color: #f0f0f0;
+        padding: 1rem;
+    }
+
+    img {
+        width: 350px;
+        height: auto;
+        border-radius: 8px; /* cantos arredondados */
+        display: block;
+        margin: 1rem auto; /* centralizar */
+    }
+    table{
+        width: 50%;
+        border-collapse: collapse;
+    }
+    th{
+        background-color: #CCD595;
+        color: #331f19;
+        padding: 1rem;
+    }
+    td{
+        color:#331f19;
+        text-align: center;
+        padding: 1rem;
+
+    }
+
+    fieldset{
+        border: 2px solid rgb(56, 56, 177);
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    legend{
+        color:rgb(56, 56, 177);
+        padding: 0 0,5rem;
+    }
+
+    textarea{
+        outline: none;
+        border-radius: 5px;
+        border: 2px solid #CCD595;
+        background-color: transparent;
+    }
+
+    button{
+        background-color: #1c77d8;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
