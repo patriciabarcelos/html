@@ -1,11 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Carrinho</title>
+    <title>Carrinho - Docinhos da Festa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Meu Carrinho 🛒</h1>
-    <p>Produtos</p>
+
+<header>
+    <nav>
+        <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="roupas.html">Roupas</a>
+            <a href="contato.html">Contato</a>
+            <a href="carrinho.html">🛒 Carrinho (<span id="contador-carrinho">0</span>)</a></li>
+    </nav>
+</header>
+
+<h1>Meu Carrinho 🛒</h1>
+
+<!-- O JavaScript vai preencher esta section -->
+<section id="carrinho"></section>
+
+<h2>Total: R$ <span id="total">0.00</span></h2>
+
+<button>Finalizar Pedido</button>
+
+<script src="script.js"></script>
 </body>
 </html>

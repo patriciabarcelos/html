@@ -1,29 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Carrinho </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="carrinho.html"> 🛒 Carrinho (<span id="contador-carrinho">0</span>)</a>
-    </nav>
-</header>
+// adicionar
+function adicionarCarrinho(nome, preco) {
+    carrinho.push({ nome, preco });
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    atualizar();
+}
 
-<h1>Meu Carrinho 🛒</h1>
+// remover
+function removerItem(index) {
+    carrinho.splice(index, 1);
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    atualizar();
+}
 
+// atualizar tela
+function atualizar() {
+    let lista = document.getElementById("carrinho");
+    let totalEl = document.getElementById("total");
+    let contador = document.getElementById("contador-carrinho");
 
-<section id="lista-carrinho"></section>
+    let total = 0;
 
-<h2>Total: R$ <span id="total">0.00</span></h2>
+    if (lista) {
+        lista.innerHTML = "";
 
-<button>Finalizar Pedido</button>
+        for (let i = 0; i < carrinho.length; i++) {
+            total += carrinho[i].preco;
 
-<script src="script.js"></script>
-</body>
-</html>
+            lista.innerHTML += carrinho[i].nome + 
+            " - R$ " + carrinho[i].preco +
+            " <button onclick='removerItem(" + i + ")'>excluir</button><br>";
+        }
+    }
+
+    if (totalEl) totalEl.innerHTML = total;
+    if (contador) contador.innerHTML = carrinho.length;
+}
+
+window.onload = atualizar;

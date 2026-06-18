@@ -27,8 +27,9 @@ body {
     main{
         padding: 2rem;
         display: flex;
-        flex-direction: column;
-        gap: 0rem;
+        gap: 20px;
+       justify-content: center;
+      flex-wrap: wrap;
     }
 
     h1{
@@ -52,10 +53,8 @@ body {
      color:  rgb(180, 176, 176)
     }
 
-    img{
-        width: 15rem;
-        border-radius: 5px;
-    }
+   
+    
     nav a {
         text-decoration: none;
         color:#283593;
@@ -76,13 +75,6 @@ body {
         padding: 1rem;
     }
 
-    img {
-        width: 350px;
-        height: auto;
-        border-radius: 8px; /* cantos arredondados */
-        display: block;
-        margin: 1rem auto; /* centralizar */
-    }
     table{
         width: 50%;
         border-collapse: collapse;
@@ -144,22 +136,24 @@ button:hover {
     
     
     .card{
-        background-color:#f0f0f0;
-        width: 600px;
-        margin: auto;
-        padding: 20px;
-       margin-top: 50px;
+        background-color: #f0f0f0;
+        width: 250px;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
     }
     
     li{
         list-style-position: inside;
     }
 
-    .receita-img {
+    .roupas-img {
         width: 100%;
         max-height: 250px;
         object-fit: cover;  /* mantém proporção e corta excesso */
         border-radius: 8px;
         display: block;
         margin: 1rem 0;
-}
+    }
+
+

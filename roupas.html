@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="script.js"></script>
+</body>
     <header>
         <h1>Roupas</h1>
     </header>
@@ -16,34 +18,38 @@
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="roupas.html">Roupas</a></li>
             <li><a href="contato.html">Contato</a></li>
+           <li><a href="carrinho.html">🛒 Carrinho (<span id="contador-carrinho">0</span>)</a></li> 
         </ul>
     </nav>
     <main>
-        <!--Item 1-->
-         <article class="card">
-        <h2>Blazer</h2>
+       <article class="card">
+    <h2>Blazer</h2>
+    
+    <p><strong>R$ 120,00</strong></p>
+
+    <img src="blazer.jpg" class="roupas-img">
+
+    <button onclick="adicionarCarrinho('Blazer', 120)">
+        Adicionar ao carrinho
+    </button>
+</article>
+
+<article class="card">
+    <h2>Vestido</h2>
+    
+    <p><strong>R$ 90,00</strong></p>
+
+    <img src="vestido.jpg" class="roupas-img">
+
+    <button onclick="adicionarCarrinho('Vestido', 90)">
+        Adicionar ao carrinho
+    </button>
+</article> 
         
-        <h3></h3>
-        <p></p>
-         <img src="blazer.jpg" alt="Blazer branco" class="receita-img"></article>
-        <!--imagem do bolo-->
-        </ul> 
-        <!--Item 2-->
-        <article class="card">
-        <h2>Vestido</h2>
         
-        <img src="vestido.jpg" alt="Vestido Rosa" class="receita-img"></article>
-        <!--Item 3-->
-        <article class="card">
-        <h2></h2>
-        
-        <p></p>
-        <img src="" alt="" class=""></article>
-    <table border="1" cellpadding="5" cellspacing="0" align="center  
-  <thead>s
-     <td colspan="5" align="right"></td>
     </tr>
     </main>
     <footer>
         <p>&copyTodos direitos reservados.</p>
     </footer>
+
